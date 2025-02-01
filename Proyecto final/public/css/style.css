@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Bebas Neue", cursive;
+    background-color: #f4f4f4;
+}
+
+/* 🟡 Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 🔹 Header */
+.header {
+    background: linear-gradient(
+        180deg,
+        rgba(251, 205, 49, 1) 0%,
+        rgba(249, 196, 49, 1) 51%,
+        rgba(246, 179, 32, 1) 100%
+    );
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+/* 🔹 Logo */
+.logo img {
+    max-height: 50px;
+}
+
+/* 🔹 Barra de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E06927;
+}
+
+/* 🟠 Botón de menú para móvil */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* 🔹 Sección de texto del header */
+.header-txt h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.header-txt p {
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* 🔹 Menú de navegación en versión móvil */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px 0;
+        width: 100%;
+        color: #333;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 165, 0, 0.8);
+        color: #fff;
+    }
+}
+
+/* 🔹 Íconos sociales */
+.socials-1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.socials-1 a {
+    margin-right: 15px;
+}
+
+.socials-1 img {
+    width: 30px;
+}
+
+/* 🔹 Sección Acerca de ESMOQUIN */
+#AcercaDe {
+    margin-top: 5rem;
+}
+
+#AcercaDe img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#AcercaDe .header-img {
+    margin-top: 40px;
+}
+
+#AcercaDe .header-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 🔹 Botón Información */
+.btn-primary {
+    background-color: #E06927;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c7591d;
+}

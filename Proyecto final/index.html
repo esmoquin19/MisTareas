@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smoquin Trade Center-Logistica Rural</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/estilocontacto.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    </head>
+
+<body>
+
+    <header class="header bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="logo">
+                        <img src="public/img/LOGO.JPG" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                    </a>
+                </div>
+    
+                <!-- Barra de navegación -->
+                <div class="col-6 col-md-9">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a href="#AcercaDe" class="nav-link">Acerca de Nosotros</a></li>
+                                <li class="nav-item"><a href="#Logística" class="nav-link">Logística</a></li>
+                                <li class="nav-item"><a href="#Transporte" class="nav-link">Transporte</a></li>
+                                <li class="nav-item"><a href="#Sostenibilidad" class="nav-link">Sostenibilidad</a></li>
+                                <li class="nav-item"><a href="contacto.html" class="nav-link">Localización y Contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+    
+                    <!-- Iconos sociales -->
+                    <div class="socials-1 mt-3">
+                        <a href="#" class="me-2"><img src="public/img/icons8-facebook.svg" alt="Facebook" class="img-fluid" style="max-width: 30px;"></a>
+                        <a href="#"><img src="public/img/icons8-instagram.svg" alt="Instagram" class="img-fluid" style="max-width: 30px;"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Texto de encabezado -->
+            <div class="text-center text-md-start mt-4">
+                <h1 class="display-4">ESMOQUIN TRADE</h1>
+                <p class="lead">Operador logístico sostenible</p>
+            </div>
+        </div>
+    </header>
+    
+<!-- Sección Acerca de ESMOQUIN TRADE -->
+    <div class="container mt-5" id="AcercaDe">
+        <section>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <img src="public/img/transporteverde.jpg" alt="Transporte Verde" class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <img src="public/img/tansporte-digitalizacion-gris-recortes-brillo.png" alt="Transporte Digitalizado" class="img-fluid rounded">
+                </div>
+            </div>
+
+            <!-- Nueva sección de texto -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h2>Acerca de ESMOQUIN TRADE</h2>
+                    <p>
+                        Somos una empresa caleña dedicada a ofrecer servicios de logística internacional con un enfoque en la eficiencia y la satisfacción del cliente. 
+                        Contamos con una flota sostenible, un personal altamente cualificado y una tecnología de vanguardia, que hacen posible cumplir nuestro propósito: 
+                        brindar un servicio de calidad a nuestros clientes, creando impacto social y ambiental positivo en nuestro día a día.
+                    </p>
+                    <a href="#" class="btn btn-primary">Información</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <form id="loginForm" class="container mt-5">
+        <div class="mb-3">
+            <label for="username" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+    </form>
+    
+    
+    <!-- Imagen debajo de la sección Acerca de -->
+    <div class="header-img mt-5">
+        <img src="public/img/tractomula.jpg" alt="Tractomula" class="img-fluid">
+    </div>
+    
+    <section class="Logistica py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/dronesentrega.jpg" alt="Entrega con drones">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/tansporte-digitalizacion-gris-recortes-brillo.png" alt="Digitalización en transporte">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/headerlogistics.jpg" alt="Logística avanzada">
+                </div>
+            </div>
+    
+            <div class="about-txt" id="Logística">
+                <h2>LOGÍSTICA</h2>
+                <p>
+                    Promovemos el transporte inteligente, una logística eficiente, oportuna y sostenible, 
+                    enfocándonos en la conducción eficiente, la optimización de rutas, un mantenimiento activo 
+                    de los vehículos e incorporando de forma continua vehículos propulsados por energías 
+                    alternativas con el fin de minimizar nuestra huella de carbono.
+                </p>
+                <a href="#" class="btn btn-secondary">Información</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="Transporte py-5" id="Transporte">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/dronesentrega.jpg" alt="Entrega con drones">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/tansporte-digitalizacion-gris-recortes-brillo.png" alt="Digitalización en transporte">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid mb-3" src="public/img/headerlogistics.jpg" alt="Logística avanzada">
+                </div>
+            </div>
+    
+            <div class="transporte-text">
+                <h3>TRANSPORTE</h3>
+                <p>
+                    Promovemos el transporte inteligente y sostenible, enfocándonos en la conducción eficiente, 
+                    la optimización de rutas, un mantenimiento activo de los vehículos e incorporando de forma 
+                    continua vehículos propulsados por energías alternativas con el fin de minimizar nuestra huella 
+                    de carbono.
+                </p>
+                <p>
+                    Independientemente de tu sector, producto básico o mercados clave, EsMoQuin Trade tiene 
+                    soluciones que ofrecen tanto a pequeñas como grandes empresas la oportunidad de crecer. 
+                    Ofrecemos a nuestros clientes salidas frecuentes en las principales rutas comerciales y 
+                    servicios interiores para una verdadera experiencia de extremo a extremo.
+                </p>
+            </div>
+    
+            <div class="contant-table mt-4" id="Sostenibilidad">
+                <h3>Sostenibilidad</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Emisiones de gases de efecto invernadero</th>
+                            <th>Tecnología Verde</th>
+                            <th>Última milla y transporte ecológico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reducción de nuestras emisiones de gases de efecto invernadero a menos de 29 millones de toneladas.</td>
+                            <td>Implementación de tecnología verde en nuestros procesos logísticos.</td>
+                            <td>Electrificar el 60% de los vehículos de entrega de última milla y aumentar la proporción de combustibles sostenibles en el transporte de mercancías a más del 30% para 2030.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <div class="card mb-4" data-category="Transporte">
+        <img src="public/img/transporte.png" alt="Transporte" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">SERVICIO DE TRANSPORTE</h3>
+            <p class="card-text">
+                Independientemente de tu sector, producto básico o mercados clave, EsMoQuin Trade tiene 
+                soluciones que ofrecen tanto a pequeñas como grandes empresas la oportunidad de crecer. 
+                Ofrecemos a nuestros clientes salidas frecuentes en las principales rutas comerciales y 
+                servicios interiores para una verdadera experiencia de extremo a extremo.
+            </p>
+            <a href="#" class="btn btn-primary">Ver Video</a>
+            <a href="#" class="btn btn-secondary">Más Info</a>
+        </div>
+    </div>
+    
+    <div class="card mb-4" data-category="Almacenamiento">
+        <img src="public/img/almacenamiento.png" alt="Almacenamiento" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">ALMACENAMIENTO PRINCIPAL</h3>
+            <p class="card-text">
+                Un almacén perfectamente situado y conectado a sus áreas de aprovisionamiento puede combinar 
+                materiales y mercancías de preexportación, ayudándole a optimizar sus movimientos terrestres 
+                y las cargas de los contenedores.
+            </p>
+            <p class="card-text">
+                Nuestra cartera de productos incluye almacenes con y sin depósitos aduaneros, instalaciones 
+                situadas dentro de zonas de libre comercio y otras cercanas o dentro de los puertos para facilitar 
+                la transferencia al barco.
+            </p>
+            <p class="card-text">
+                Ofrecemos consolidación nacional y regional/internacional, incluida la consolidación multinacional.
+            </p>
+            <a href="#" class="btn btn-primary">Ver Video</a>
+            <a href="#" class="btn btn-secondary">Más Info</a>
+        </div>
+        <div id="mapa" style="height: 400px;"></div> <!-- Agrega un alto explícito para que se vea el mapa -->
+
+
+    </div>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>&copy; 2025 ESMOQUIN TRADE. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Aquí están los scripts específicos para cada función -->
+<!-- Para el rastreo de paquetes -->
+<script>
+    function trackPackage() {
+        const trackingNumber = document.getElementById('tracking-number').value;
+        const resultDiv = document.getElementById('tracking-result');
+
+        if (trackingNumber.trim() === '') {
+            resultDiv.style.display = 'block';
+            resultDiv.textContent = 'Por favor, ingresa un número de guía válido.';
+            return;
+        }
+
+        resultDiv.style.display = 'block';
+        resultDiv.textContent = `El paquete con número de guía ${trackingNumber} se encuentra en tránsito.`;
+    }
+</script>
+
+
+
+<form id="loginForm">
+    <input type="text" id="username" placeholder="Usuario" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button type="submit">Iniciar sesión</button>
+</form>
+
+</body>
+</html>
